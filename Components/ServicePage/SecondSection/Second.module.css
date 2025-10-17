@@ -1,0 +1,48 @@
+.main{
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: 50px;
+  background-color: #414A4C;
+  background-image: url("https://res.cloudinary.com/dzvvb0z0h/image/upload/f_auto,q_auto/v1757953145/bg4_gvm4do.png");
+}
+.first{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+}
+.first h2{
+  font-size: clamp(20px,5vw, 45px);
+  font-family: 'Julius Sans One','Roboto',sans-serif;
+  color: azure;
+}
+
+.second{
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 100px;
+  margin-top: 50px;
+}
+
+
+
+
+
+
+@media (max-width: 768px) {
+  .second{
+    width: 550px;
+    flex-direction: column;
+    gap: 50px;
+    margin-top: 30px;
+  }
+}

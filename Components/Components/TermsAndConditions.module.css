@@ -1,0 +1,29 @@
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px;
+  background: #fdfdfd;
+  color: #222;
+  border-radius: 14px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+h1 {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+  color: #111;
+}
+
+h2 {
+  margin-top: 25px;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+p, ul {
+  margin-bottom: 12px;
+}
+ul {
+  padding-left: 22px;
+  list-style: disc;
+}

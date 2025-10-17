@@ -1,0 +1,190 @@
+"use client";
+
+import Container from "../../../Components/Container";
+import FormNavigate from "../../../Components/FormNavigate";
+import { useStore } from "../../stores/useStore";
+import { useState, useEffect } from "react";
+import { toast, ToastContainer } from "react-toastify";
+
+function ServicesSchedule() {
+  const { addUserInputData, userInputData } = useStore();
+
+  const serviceScheduledata = {
+    title: "We want to schedule my services for...",
+    hintText:
+      "Uncheck the meals you don't need. Swipe down the calendar to see all the dates. 😉",
+  };
+
+  const [schedule, setSchedule] = useState([]);
+
+  function formatDate(date) {
+    if (!date) return "";
+    return Intl.DateTimeFormat("en-GB", {
+      day: "2-digit",
+      month: "2-digit",
+      year: "numeric",
+    }).format(date);
+  }
+
+  useEffect(() => {
+    const startDate = userInputData.find((item) => item.id === "date-select")
+      ?.data.startDate;
+    const endDate = userInputData.find((item) => item.id === "date-select")
+      ?.data.endDate;
+
+    if (!startDate || !endDate) return;
+
+    const start = new Date(startDate);
+    const end = new Date(endDate);
+    const datesArray = [];
+    let current = new Date(start);
+    while (current <= end) {
+      datesArray.push(formatDate(current));
+      current.setDate(current.getDate() + 1);
+    }
+
+    const savedSchedule = userInputData.find(
+      (item) => item.id === "services-schedule"
+    )?.data;
+
+    if (savedSchedule && savedSchedule.length === datesArray.length) {
+      setSchedule(savedSchedule);
+    } else {
+      const newSchedule = datesArray.map((date) => ({
+        date,
+        breakfast: true,
+        lunch: true,
+        dinner: true,
+        eveningSnacks: true,
+        additionalNote: "",
+      }));
+      setSchedule(newSchedule);
+    }
+  }, [userInputData]);
+
+  const handleCheckboxChange = (index, meal) => {
+    setSchedule((prev) =>
+      prev.map((item, idx) =>
+        idx === index ? { ...item, [meal]: !item[meal] } : item
+      )
+    );
+  };
+
+  const handleNoteChange = (index, value) => {
+    setSchedule((prev) =>
+      prev.map((item, idx) =>
+        idx === index ? { ...item, additionalNote: value } : item
+      )
+    );
+  };
+
+  const onNextBtnClick = () => {
+    if (!schedule || schedule.length === 0) {
+      toast("No schedule selected!");
+      return false;
+    }
+    addUserInputData({ id: "services-schedule", data: schedule });
+    return true;
+  };
+
+  return (
+    <Container>
+      <div>
+        <p className="text-xl font-bold text-center text-white">
+          {serviceScheduledata.title}
+        </p>
+      </div>
+
+      <div className="overflow-x-auto my-5">
+        <table className="w-full border border-gray-300 text-center text-white">
+          <thead>
+            <tr>
+              <th className="p-2 border">DATE</th>
+              <th className="p-2 border">BREAKFAST</th>
+              <th className="p-2 border">LUNCH</th>
+              <th className="p-2 border">DINNER</th>
+              <th className="p-2 border">EVENING SNACKS</th>
+              <th className="p-2 border">ADDITIONAL INPUT</th>
+            </tr>
+          </thead>
+          <tbody>
+            {schedule.map((item, index) => (
+              <tr key={index}>
+                <td className="p-2 border">{item.date}</td>
+                <td className="p-2 border">
+                  <input
+                    type="checkbox"
+                    checked={item.breakfast}
+                    onChange={() => handleCheckboxChange(index, "breakfast")}
+                    className="w-6 h-6 accent-orange-500 cursor-pointer"
+                  />
+                </td>
+                <td className="p-2 border">
+                  <input
+                    type="checkbox"
+                    checked={item.lunch}
+                    onChange={() => handleCheckboxChange(index, "lunch")}
+                    className="w-6 h-6 accent-orange-500 cursor-pointer"
+                  />
+                </td>
+                <td className="p-2 border">
+                  <input
+                    type="checkbox"
+                    checked={item.dinner}
+                    onChange={() => handleCheckboxChange(index, "dinner")}
+                    className="w-6 h-6 accent-orange-500 cursor-pointer"
+                  />
+                </td>
+                <td className="p-2 border">
+                  <input
+                    type="checkbox"
+                    checked={item.eveningSnacks}
+                    onChange={() =>
+                      handleCheckboxChange(index, "eveningSnacks")
+                    }
+                    className="w-6 h-6 accent-orange-500 cursor-pointer"
+                  />
+                </td>
+                <td className="p-2 border">
+                  <input
+                    type="text"
+                    placeholder="Add notes..."
+                    value={item.additionalNote}
+                    onChange={(e) => handleNoteChange(index, e.target.value)}
+                    className="border rounded p-1 w-full text-white bg-transparent placeholder-white"
+                  />
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+
+      <div className="p-3 my-2 bg-orange-300 text-white w-4/5 font-semibold text-center mx-auto">
+        {serviceScheduledata.hintText}
+      </div>
+
+      <div className="flex justify-center mt-7 space-x-5">
+        <FormNavigate
+          bgColor="bg-red-500"
+          hoverColor="hover:bg-red-400"
+          navigateTo="/date"
+        >
+          <span className="text-white">Previous</span>
+        </FormNavigate>
+        <FormNavigate
+          bgColor="bg-green-500"
+          hoverColor="hover:bg-green-400"
+          navigateTo="/people"
+          handleBtnClick={onNextBtnClick}
+          navigationDisabled={false}
+        >
+          <span className="text-white">Next</span>
+        </FormNavigate>
+      </div>
+      <ToastContainer />
+    </Container>
+  );
+}
+
+export default ServicesSchedule;

@@ -1,0 +1,103 @@
+import Container from "./Container";
+import { IoMdRadioButtonOn, IoMdRadioButtonOff } from "react-icons/io";
+import { useState, useEffect } from "react";
+import FormNavigate from "./FormNavigate";
+import { useStore } from "../../useStore.js";
+import { toast, ToastContainer } from "react-toastify";
+
+function Place() {
+  const { addUserInputData, userInputData } = useStore();
+
+  const [OptionPlace, setOptionPlace] = useState([
+    { id: 1, title: "Garden", setActiv: false },
+    { id: 2, title: "Banquet", setActiv: false },
+    { id: 3, title: "Farm House", setActiv: false },
+    { id: 4, title: "Beach", setActiv: false },
+    { id: 5, title: "Resort", setActiv: false },
+    { id: 6, title: "Terrace", setActiv: false },
+    { id: 7, title: "Other", setActiv: false },
+  ]);
+
+  const placedata = {
+    title: "Select a place for the chef to cook",
+  };
+
+  // Restore previously selected place
+  useEffect(() => {
+    const selectedPlace = userInputData.find((item) => item.id === "place");
+    if (selectedPlace) {
+      setOptionPlace((prev) =>
+        prev.map((place) => ({
+          ...place,
+          setActiv: place.title === selectedPlace.data,
+        }))
+      );
+    }
+  }, [userInputData]);
+
+  function handleOptionClick(id) {
+    setOptionPlace((prev) =>
+      prev.map((place) => ({
+        ...place,
+        setActiv: place.id === id,
+      }))
+    );
+  }
+
+  function onNextBtnClick() {
+    const selectedPlace = OptionPlace.find((place) => place.setActiv);
+    if (!selectedPlace) {
+      toast("Select a Place!");
+      return false;
+    }
+    addUserInputData({ id: "place", data: selectedPlace.title });
+    return true;
+  }
+
+  return (
+    <Container>
+      <div>
+        <p className="text-center font-bold text-xl my-5 text-white">
+          {placedata.title}
+        </p>
+      </div>
+      <div className="grid md:grid-cols-2 md:grid-rows-4 space-y-2 w-2/5 mx-auto">
+        {OptionPlace.map((item) => (
+          <div
+            className="flex cursor-pointer items-center m-2 space-x-2"
+            onClick={() => handleOptionClick(item.id)}
+            key={item.id}
+          >
+            {item.setActiv ? (
+              <IoMdRadioButtonOn className="text-xl text-orange-500" />
+            ) : (
+              <IoMdRadioButtonOff className="text-xl text-orange-500" />
+            )}
+            <p className="text-xl text-white">{item.title}</p>
+          </div>
+        ))}
+      </div>
+      <div className="flex justify-center mt-10 space-x-5">
+        <FormNavigate
+          bgColor="bg-red-500"
+          hoverColor="hover:bg-red-400"
+          navigateTo="/location"
+        >
+          <span className="text-white">Previous</span>
+        </FormNavigate>
+        <FormNavigate
+          bgColor="bg-green-500"
+          hoverColor="hover:bg-green-400"
+          navigateTo="/date"
+          handleBtnClick={onNextBtnClick}
+          navigationDisabled={false}
+        >
+          <span className="text-white">Next</span>
+        </FormNavigate>
+      </div>
+      <ToastContainer />
+    </Container>
+  );
+}
+
+export default Place;

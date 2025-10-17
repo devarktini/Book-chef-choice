@@ -1,0 +1,26 @@
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px;
+  background: #fff;
+  color: #333;
+  border: 1px solid #eee;
+  border-radius: 16px;
+}
+
+h1 {
+  font-size: 2.3rem;
+  margin-bottom: 18px;
+  color: #1a1a1a;
+}
+
+h2 {
+  margin-top: 22px;
+  font-size: 1.4rem;
+  color: #444;
+}
+
+p {
+  margin-bottom: 14px;
+  line-height: 1.6;
+}
