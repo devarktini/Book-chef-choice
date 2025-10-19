@@ -1,0 +1,97 @@
+/* [project]/Components/Components/ServiceCard.module.css [app-client] (css) */
+.ServiceCard-module___f9LLG__main {
+  box-sizing: border-box;
+  background-color: #151920;
+  border-radius: 25px;
+  width: 600px;
+  height: auto;
+  padding: 15px;
+}
+
+.ServiceCard-module___f9LLG__card {
+  box-sizing: border-box;
+  flex-flow: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 25px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.ServiceCard-module___f9LLG__one {
+  box-sizing: border-box;
+  width: 40%;
+  height: 100%;
+  padding: 10px 20px;
+}
+
+.ServiceCard-module___f9LLG__one img {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+}
+
+.ServiceCard-module___f9LLG__two {
+  box-sizing: border-box;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 50%;
+  height: 100%;
+  display: flex;
+}
+
+.ServiceCard-module___f9LLG__threeImg {
+  position: relative;
+}
+
+.ServiceCard-module___f9LLG__threeImg img {
+  float: right;
+  margin-top: 0;
+}
+
+.ServiceCard-module___f9LLG__description {
+  color: #fff;
+  font-family: Roboto, sans-serif;
+  font-size: max(13px, min(5vw, 17px));
+  font-weight: 300;
+  line-height: 1.5rem;
+}
+
+.ServiceCard-module___f9LLG__fourImg {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.ServiceCard-module___f9LLG__five {
+  box-sizing: border-box;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  display: flex;
+}
+
+.ServiceCard-module___f9LLG__five img {
+  float: left;
+  width: 20%;
+}
+
+.ServiceCard-module___f9LLG__title {
+  color: #fc7000;
+  margin-top: 5px;
+  font-family: Julius Sans One, Poppins, Roboto, sans-serif;
+  font-size: max(20px, min(5vw, 28px));
+}
+
+@media (max-width: 768px) {
+  .ServiceCard-module___f9LLG__five {
+    margin-top: 10px;
+  }
+
+  .ServiceCard-module___f9LLG__main {
+    box-sizing: border-box;
+    width: 80%;
+  }
+}
+
+/*# sourceMappingURL=Components_Components_ServiceCard_module_css_bad6b30c._.single.css.map*/

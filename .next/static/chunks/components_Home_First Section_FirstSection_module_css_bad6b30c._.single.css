@@ -1,0 +1,127 @@
+/* [project]/components/Home/First Section/FirstSection.module.css [app-client] (css) */
+.FirstSection-module__SfyCwW__section {
+  text-align: center;
+  background-color: var(--section-bg);
+  padding: 40px 20px;
+  position: relative;
+}
+
+.FirstSection-module__SfyCwW__topRight {
+  opacity: .8;
+  pointer-events: none;
+  width: 20%;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.FirstSection-module__SfyCwW__bottomLeft {
+  opacity: .8;
+  pointer-events: none;
+  width: 20%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.FirstSection-module__SfyCwW__bottomRight {
+  opacity: .9;
+  pointer-events: none;
+  width: 15%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.FirstSection-module__SfyCwW__content {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+  font-family: Julius Sans One, sans-serif;
+  display: flex;
+}
+
+.FirstSection-module__SfyCwW__content h2 {
+  color: var(--primary);
+  margin-bottom: 10px;
+  font-size: 38px;
+}
+
+.FirstSection-module__SfyCwW__content p {
+  color: var(--text-primary);
+  max-width: 950px;
+  margin: 0 auto;
+  font-family: Roboto, sans-serif;
+  font-size: 20px;
+}
+
+.FirstSection-module__SfyCwW__cards {
+  z-index: -1;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 120px;
+  margin-bottom: 50px;
+  display: flex;
+  overflow: visible;
+}
+
+.FirstSection-module__SfyCwW__card {
+  background-image: url("https://res.cloudinary.com/dzvvb0z0h/image/upload/f_auto,q_auto/v1757953149/gold_lfgqa0.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  height: 300px;
+  display: flex;
+  position: relative;
+}
+
+.FirstSection-module__SfyCwW__bg {
+  z-index: 0;
+  background-position: center;
+  background-size: cover;
+  border-radius: 8px;
+  width: 90%;
+  height: 110%;
+  position: absolute;
+  top: -5%;
+  left: 5%;
+}
+
+.FirstSection-module__SfyCwW__card img {
+  object-fit: cover;
+  z-index: 1;
+  width: 120%;
+  height: 85%;
+  position: relative;
+}
+
+.FirstSection-module__SfyCwW__Button1 {
+  background-color: var(--button-bg);
+  color: var(--button-text);
+  border: 1px solid var(--button-border);
+  margin-top: 50px;
+  padding: 12px 22px;
+  font-family: Julius Sans One, sans-serif;
+  font-size: 15px;
+}
+
+@media (max-width: 768px) {
+  .FirstSection-module__SfyCwW__cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .FirstSection-module__SfyCwW__card {
+    margin: 10px 0;
+  }
+
+  .FirstSection-module__SfyCwW__middle {
+    margin-top: 0;
+  }
+}
+
+/*# sourceMappingURL=components_Home_First%20Section_FirstSection_module_css_bad6b30c._.single.css.map*/

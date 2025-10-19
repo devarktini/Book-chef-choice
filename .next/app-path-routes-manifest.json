@@ -1,0 +1,21 @@
+{
+  "/_not-found/page": "/_not-found",
+  "/about/page": "/about",
+  "/blog/page": "/blog",
+  "/book-chef/page": "/book-chef",
+  "/budget/page": "/budget",
+  "/contact/page": "/contact",
+  "/date/page": "/date",
+  "/favicon.ico/route": "/favicon.ico",
+  "/location/page": "/location",
+  "/occasion/page": "/occasion",
+  "/page": "/",
+  "/people/page": "/people",
+  "/place/page": "/place",
+  "/restriction/page": "/restriction",
+  "/schedule/service/page": "/schedule/service",
+  "/select/restriction/page": "/select/restriction",
+  "/service/page": "/service",
+  "/summary/page": "/summary",
+  "/thanks/page": "/thanks"
+}

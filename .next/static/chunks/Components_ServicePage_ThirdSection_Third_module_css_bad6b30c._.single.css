@@ -1,0 +1,52 @@
+/* [project]/Components/ServicePage/ThirdSection/Third.module.css [app-client] (css) */
+.Third-module__Gf_g6a__main {
+  box-sizing: border-box;
+  background-image: url("https://res.cloudinary.com/dzvvb0z0h/image/upload/f_auto,q_auto/v1757953170/Rectangle81_juwd1v.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  height: 600px;
+  position: relative;
+}
+
+.Third-module__Gf_g6a__one {
+  box-sizing: border-box;
+  background-color: #0e1317;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  flex-direction: column;
+  gap: 10px;
+  width: 40%;
+  height: auto;
+  padding: 20px 40px;
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  left: 50px;
+}
+
+.Third-module__Gf_g6a__one h3 {
+  margin-bottom: 0;
+  font-family: Julius Sans One, Roboto, sans-serif;
+  font-size: max(20px, min(5vw, 45px));
+}
+
+.Third-module__Gf_g6a__one p {
+  font-family: Roboto, sans-serif;
+  font-size: max(14px, min(5vw, 18px));
+  font-weight: 300;
+}
+
+@media (max-width: 768px) {
+  .Third-module__Gf_g6a__one {
+    width: auto;
+  }
+
+  .Third-module__Gf_g6a__main {
+    background-position: 100%;
+  }
+}
+
+/*# sourceMappingURL=Components_ServicePage_ThirdSection_Third_module_css_bad6b30c._.single.css.map*/

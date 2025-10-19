@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/components/Home/SecondSection/ActionAreaCard.module.css"],"sourcesContent":["@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');\r\n@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');\r\n\r\n.card {\r\n  max-width: 345px;\r\n  margin-top: 10px;\r\n  width: 100%;\r\n  background-color: var(--card-bg);\r\n}\r\n\r\n.cardMedia {\r\n  width: 100%;\r\n  height: 250px;\r\n  object-fit: cover; /* ensures image fills without distortion */\r\n}\r\n\r\n.title {\r\n  color: var(--primary);\r\n  font-family: 'Julius Sans One',sans-serif;\r\n}\r\n\r\n.description {\r\n  font-family: \"Roboto\", sans-serif;\r\n  font-size: 15px;\r\n  font-weight: 500;\r\n  color: var(--text-primary);\r\n  background-color: var(--card-bg);\r\n}\r\n"],"names":[],"mappings":"AAGA;;;;;;;AAOA;;;;;;AAMA;;;;;AAKA"}}]
+}

@@ -1,0 +1,28 @@
+/* [project]/components/Home/SecondSection/ActionAreaCard.module.css [app-client] (css) */
+.ActionAreaCard-module__wA_Pgq__card {
+  background-color: var(--card-bg);
+  width: 100%;
+  max-width: 345px;
+  margin-top: 10px;
+}
+
+.ActionAreaCard-module__wA_Pgq__cardMedia {
+  object-fit: cover;
+  width: 100%;
+  height: 250px;
+}
+
+.ActionAreaCard-module__wA_Pgq__title {
+  color: var(--primary);
+  font-family: Julius Sans One, sans-serif;
+}
+
+.ActionAreaCard-module__wA_Pgq__description {
+  color: var(--text-primary);
+  background-color: var(--card-bg);
+  font-family: Roboto, sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+/*# sourceMappingURL=components_Home_SecondSection_ActionAreaCard_module_css_bad6b30c._.single.css.map*/

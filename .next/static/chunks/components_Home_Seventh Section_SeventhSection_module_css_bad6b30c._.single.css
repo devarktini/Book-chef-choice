@@ -1,0 +1,36 @@
+/* [project]/components/Home/Seventh Section/SeventhSection.module.css [app-client] (css) */
+.SeventhSection-module__4c5uZa__main {
+  background-color: #232b2b;
+  gap: 100px;
+  width: 100%;
+  height: auto;
+  padding-top: 100px;
+}
+
+.SeventhSection-module__4c5uZa__first {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  height: auto;
+  display: flex;
+}
+
+.SeventhSection-module__4c5uZa__headingText {
+  color: #fc7000;
+  text-align: center;
+  width: 100%;
+  font-family: Julius Sans One, sans-serif;
+  font-size: max(20px, min(5vw, 30px));
+}
+
+.SeventhSection-module__4c5uZa__paraText {
+  text-align: center;
+  color: #fff;
+  width: 50%;
+  font-family: Roboto, sans-serif;
+  font-size: max(14px, min(3vw, 18px));
+}
+
+/*# sourceMappingURL=components_Home_Seventh%20Section_SeventhSection_module_css_bad6b30c._.single.css.map*/

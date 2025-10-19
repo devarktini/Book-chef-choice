@@ -1,0 +1,301 @@
+@import "https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Roboto:wght@400;500&display=swap";
+/* [project]/Components/About/styles/aboutUs.module.css [app-client] (css) */
+.aboutUs-module__YhqkfG__heroContainer {
+  background-image: url("https://res.cloudinary.com/dzvvb0z0h/image/upload/f_auto,q_auto/v1757953147/AboutHero_sap22a.jpg");
+  background-repeat: no-repeat;
+  background-size: 100vw;
+  position: relative;
+}
+
+.aboutUs-module__YhqkfG__cardHeading {
+  color: #fc7000;
+  text-align: center;
+  font-family: Julius Sans One, sans-serif;
+  font-weight: 600;
+}
+
+.aboutUs-module__YhqkfG__secondSectionNumber {
+  color: var(--primary);
+  text-align: center;
+  font-family: Julius Sans One, sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.aboutUs-module__YhqkfG__secondSectionText {
+  color: var(--text-primary);
+  text-align: center;
+  font-family: Roboto, sans-serif;
+  font-size: 1.25rem;
+}
+
+.aboutUs-module__YhqkfG__cardData {
+  text-align: center;
+  font-family: Roboto, sans-serif;
+  font-size: .875rem;
+}
+
+.aboutUs-module__YhqkfG__blackScreenForOpacity {
+  width: 100vw;
+  height: inherit;
+  opacity: .6;
+  background-color: #000;
+  position: absolute;
+}
+
+.aboutUs-module__YhqkfG__heroChild {
+  z-index: 100;
+}
+
+.aboutUs-module__YhqkfG__sectionContainer {
+  position: relative;
+}
+
+.aboutUs-module__YhqkfG__decorTopRight {
+  position: absolute;
+  top: -100px;
+  right: 0;
+}
+
+.aboutUs-module__YhqkfG__decorBottomLeft {
+  position: absolute;
+  bottom: -100px;
+  left: 0;
+}
+
+.aboutUs-module__YhqkfG__parentContainer {
+  padding: 50px;
+  position: relative;
+}
+
+.aboutUs-module__YhqkfG__childContainer1 {
+  width: 300px;
+  height: 520px;
+  margin-left: 25px;
+  position: absolute;
+}
+
+.aboutUs-module__YhqkfG__childContainer2 {
+  width: 350px;
+  height: 480px;
+  margin-top: 25px;
+  position: absolute;
+}
+
+.aboutUs-module__YhqkfG__secondSectionContainer {
+  background-color: var(--background);
+}
+
+.aboutUs-module__YhqkfG__containerDecor {
+  position: relative;
+}
+
+.aboutUs-module__YhqkfG__SubcontainerDecor1 {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+}
+
+.aboutUs-module__YhqkfG__thirdSectionTitle {
+  color: #fc7000;
+  text-align: center;
+  margin-bottom: .5rem;
+  font-family: Julius Sans One, sans-serif;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.aboutUs-module__YhqkfG__thirdSectionHeading {
+  color: var(--text-primary);
+  text-align: center;
+  margin: .5rem 0;
+  font-family: Julius Sans One, sans-serif;
+  font-size: 1.75rem;
+  font-weight: 600;
+}
+
+.aboutUs-module__YhqkfG__thirdSectionText {
+  color: var(--text-primary);
+  text-align: center;
+  width: 80%;
+  margin-top: .5rem;
+  font-family: Roboto, sans-serif;
+  font-size: 1rem;
+}
+
+.aboutUs-module__YhqkfG__fourthSectionTitle {
+  color: #fc7000;
+  text-align: center;
+  margin-bottom: .5rem;
+  font-family: Julius Sans One, sans-serif;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.aboutUs-module__YhqkfG__fourthSectionHeading {
+  text-align: center;
+  margin: .5rem 0 1rem;
+  font-family: Julius Sans One, sans-serif;
+  font-size: 1.75rem;
+  font-weight: 600;
+}
+
+.aboutUs-module__YhqkfG__fourthSectionServiceTitle {
+  color: #fc7000;
+  margin-bottom: .5rem;
+  font-family: Roboto, sans-serif;
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+.aboutUs-module__YhqkfG__fourthSectionServiceText {
+  font-family: Roboto, sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.aboutUs-module__YhqkfG__reviewCardContainer {
+  text-align: center;
+  background-color: #000;
+  border-radius: 12px;
+  flex-direction: column;
+  align-items: center;
+  width: 280px;
+  padding: 20px;
+  display: flex;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, .3);
+}
+
+.aboutUs-module__YhqkfG__reviewCardText {
+  color: #fff;
+  margin-bottom: 10px;
+  font-family: Roboto, sans-serif;
+  font-size: .95rem;
+  line-height: 1.6;
+}
+
+.aboutUs-module__YhqkfG__reviewCardName {
+  color: #fc7000;
+  margin-top: 5px;
+  font-family: Julius Sans One, sans-serif;
+  font-weight: 600;
+}
+
+.aboutUs-module__YhqkfG__reviewCardCity {
+  color: #fff;
+  font-family: Julius Sans One, sans-serif;
+  font-size: .85rem;
+}
+
+.aboutUs-module__YhqkfG__font-roboto {
+  font-family: Roboto, sans-serif;
+}
+
+.aboutUs-module__YhqkfG__font-julius {
+  font-family: Julius Sans One, sans-serif;
+}
+
+.aboutUs-module__YhqkfG__secondContentBlock {
+  z-index: 100;
+  position: relative;
+}
+
+.aboutUs-module__YhqkfG__SubcontainerDecor2 {
+  position: absolute;
+  bottom: -80px;
+  left: 0;
+}
+
+.aboutUs-module__YhqkfG__gridItemcontainer {
+  display: none;
+  position: relative;
+}
+
+.aboutUs-module__YhqkfG__gridSubcontainer1 {
+  position: absolute;
+}
+
+.aboutUs-module__YhqkfG__gridSubcontainer2 {
+  z-index: 10;
+  margin-top: 150px;
+}
+
+.aboutUs-module__YhqkfG__fifthSectionContainer {
+  background-image: url("https://res.cloudinary.com/dzvvb0z0h/image/upload/f_auto,q_auto/v1757953168/Rectangle_29_q4wejb.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (min-width: 768px) {
+  .aboutUs-module__YhqkfG__heroContainer {
+    background-size: 100vw;
+    height: 80vh;
+  }
+
+  .aboutUs-module__YhqkfG__gridItemcontainer {
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    position: relative;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+@media (max-width: 767px) {
+  .aboutUs-module__YhqkfG__heroContainer {
+    background-position: center;
+    background-size: cover;
+    min-height: 60vh;
+  }
+
+  .aboutUs-module__YhqkfG__blackScreenForOpacity {
+    width: 100%;
+    height: 100%;
+  }
+
+  .aboutUs-module__YhqkfG__parentContainer {
+    padding: 20px;
+  }
+
+  .aboutUs-module__YhqkfG__childContainer1, .aboutUs-module__YhqkfG__childContainer2 {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  .aboutUs-module__YhqkfG__childContainer2 {
+    display: none;
+  }
+
+  .aboutUs-module__YhqkfG__decorTopRight img, .aboutUs-module__YhqkfG__decorBottomLeft img {
+    max-width: 120px;
+  }
+}
+
+@media (max-width: 640px) {
+  .aboutUs-module__YhqkfG__containerDecor {
+    overflow: hidden;
+  }
+
+  .aboutUs-module__YhqkfG__SubcontainerDecor1, .aboutUs-module__YhqkfG__SubcontainerDecor2 {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .aboutUs-module__YhqkfG__decorTopRight {
+    top: -50px;
+  }
+
+  .aboutUs-module__YhqkfG__decorBottomLeft {
+    bottom: -60px;
+  }
+}
+
+/*# sourceMappingURL=Components_About_styles_aboutUs_module_f3736f74.css.map*/

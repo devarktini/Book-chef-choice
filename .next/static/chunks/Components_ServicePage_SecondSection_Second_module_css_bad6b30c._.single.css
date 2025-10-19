@@ -1,0 +1,47 @@
+/* [project]/Components/ServicePage/SecondSection/Second.module.css [app-client] (css) */
+.Second-module__chW4Za__main {
+  box-sizing: border-box;
+  background-color: #414a4c;
+  background-image: url("https://res.cloudinary.com/dzvvb0z0h/image/upload/f_auto,q_auto/v1757953145/bg4_gvm4do.png");
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  padding: 50px;
+  display: flex;
+}
+
+.Second-module__chW4Za__first {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.Second-module__chW4Za__first h2 {
+  color: azure;
+  font-family: Julius Sans One, Roboto, sans-serif;
+  font-size: max(20px, min(5vw, 45px));
+}
+
+.Second-module__chW4Za__second {
+  box-sizing: border-box;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 100px;
+  margin-top: 50px;
+  display: flex;
+}
+
+@media (max-width: 768px) {
+  .Second-module__chW4Za__second {
+    flex-direction: column;
+    gap: 50px;
+    width: 550px;
+    margin-top: 30px;
+  }
+}
+
+/*# sourceMappingURL=Components_ServicePage_SecondSection_Second_module_css_bad6b30c._.single.css.map*/

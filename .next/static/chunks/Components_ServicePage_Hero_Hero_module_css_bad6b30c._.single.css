@@ -1,0 +1,35 @@
+/* [project]/Components/ServicePage/Hero/Hero.module.css [app-client] (css) */
+.Hero-module__U1WgDa__main {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 600px;
+  padding: 50px;
+  display: flex;
+}
+
+.Hero-module__U1WgDa__one {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  width: 70%;
+  height: auto;
+  display: flex;
+}
+
+.Hero-module__U1WgDa__one h2 {
+  color: azure;
+  font-family: Julius Sans One, Roboto, Poppins, sans-serif;
+  font-size: max(13px, min(5vw, 18px));
+}
+
+.Hero-module__U1WgDa__one h1 {
+  color: azure;
+  margin-top: 0;
+  font-family: Julius Sans One, Roboto, Poppins, sans-serif;
+  font-size: max(25px, min(5vw, 65px));
+}
+
+/*# sourceMappingURL=Components_ServicePage_Hero_Hero_module_css_bad6b30c._.single.css.map*/

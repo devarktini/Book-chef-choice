@@ -1,0 +1,80 @@
+/* [project]/components/Components/CardGoldBack.module.css [app-client] (css) */
+.CardGoldBack-module__hCS5Ea__wrapper {
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+}
+
+.CardGoldBack-module__hCS5Ea__card {
+  aspect-ratio: 3 / 4;
+  background-image: url("https://res.cloudinary.com/dzvvb0z0h/image/upload/f_auto,q_auto/v1757953149/gold_lfgqa0.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 300px;
+  display: flex;
+  position: relative;
+  overflow: visible;
+}
+
+.CardGoldBack-module__hCS5Ea__card:before {
+  content: "";
+  z-index: 0;
+  background: rgba(0, 0, 0, .2);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.CardGoldBack-module__hCS5Ea__card > * {
+  z-index: 1;
+  position: relative;
+}
+
+.CardGoldBack-module__hCS5Ea__card img {
+  object-fit: cover;
+  width: 120%;
+  height: 85%;
+}
+
+.CardGoldBack-module__hCS5Ea__caption {
+  color: var(--text-primary);
+  z-index: 1;
+  margin-top: 1.5rem;
+  font-family: Julius Sans One, sans-serif;
+  font-size: max(35px, min(3vw, 55px));
+  font-weight: 600;
+}
+
+.CardGoldBack-module__hCS5Ea__doubleLine {
+  width: max(60px, min(20vw, 120px));
+  height: 6px;
+  margin-top: 6px;
+  position: relative;
+}
+
+.CardGoldBack-module__hCS5Ea__doubleLine:before, .CardGoldBack-module__hCS5Ea__doubleLine:after {
+  content: "";
+  background: linear-gradient(to right, #fc7000, #ff9b42);
+  border-radius: 2px;
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  left: 0;
+}
+
+.CardGoldBack-module__hCS5Ea__doubleLine:before {
+  top: 0;
+}
+
+.CardGoldBack-module__hCS5Ea__doubleLine:after {
+  bottom: 0;
+}
+
+/*# sourceMappingURL=components_Components_CardGoldBack_module_css_bad6b30c._.single.css.map*/

@@ -1,0 +1,67 @@
+/* [project]/components/Home/SecondSection/SecondSection.module.css [app-client] (css) */
+.SecondSection-module__wJVuZa__section {
+  background-color: var(--section-bg);
+  padding: 60px 20px 200px;
+  position: relative;
+  overflow: hidden;
+}
+
+.SecondSection-module__wJVuZa__heading {
+  text-align: center;
+  color: var(--primary);
+  margin-bottom: 40px;
+  font-family: Julius Sans One, sans-serif;
+  font-size: 2.5rem;
+}
+
+.SecondSection-module__wJVuZa__iconWrapper {
+  justify-content: center;
+  margin-bottom: 20px;
+  display: flex;
+}
+
+.SecondSection-module__wJVuZa__cardContainer {
+  z-index: 1;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  display: flex;
+}
+
+.SecondSection-module__wJVuZa__backgroundImage {
+  opacity: .8;
+  z-index: 0;
+  background-image: url("https://res.cloudinary.com/dzvvb0z0h/image/upload/f_auto,q_auto/v1758443643/bg-8_kw3atv.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 50%;
+  height: 300px;
+  position: absolute;
+  top: 70%;
+  left: 0;
+  transform: rotate(180deg);
+}
+
+@media (max-width: 768px) {
+  .SecondSection-module__wJVuZa__heading {
+    font-size: 2rem;
+  }
+
+  .SecondSection-module__wJVuZa__backgroundImage {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+@media (max-width: 480px) {
+  .SecondSection-module__wJVuZa__heading {
+    font-size: 1.6rem;
+  }
+
+  .SecondSection-module__wJVuZa__cardContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/*# sourceMappingURL=components_Home_SecondSection_SecondSection_module_css_bad6b30c._.single.css.map*/

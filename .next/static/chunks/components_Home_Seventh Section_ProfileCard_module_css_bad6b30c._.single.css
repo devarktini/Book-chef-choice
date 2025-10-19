@@ -1,0 +1,137 @@
+/* [project]/components/Home/Seventh Section/ProfileCard.module.css [app-client] (css) */
+:root {
+  --gap: 2rem;
+  --card-radius: .5rem;
+  --card-img-height: 12rem;
+  --container-max: 1200px;
+}
+
+.ProfileCard-module__gzqv4G__profileSection {
+  background-color: #232b2b;
+  padding-top: 5rem;
+  padding-bottom: 2.5rem;
+}
+
+.ProfileCard-module__gzqv4G__dark .ProfileCard-module__gzqv4G__profileSection {
+  background-color: #111827;
+}
+
+.ProfileCard-module__gzqv4G__container {
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.ProfileCard-module__gzqv4G__cardsGrid {
+  gap: var(--gap);
+  grid-template-columns: 1fr;
+  display: grid;
+}
+
+@media (min-width: 640px) {
+  .ProfileCard-module__gzqv4G__cardsGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .ProfileCard-module__gzqv4G__profileSection {
+    padding-top: 120px;
+    padding-bottom: 5rem;
+  }
+
+  .ProfileCard-module__gzqv4G__cardsGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.ProfileCard-module__gzqv4G__card {
+  border-radius: var(--card-radius);
+  background-color: #151920;
+  margin-bottom: 2.5rem;
+  transition: box-shadow .3s, transform .3s;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(15, 23, 42, .06);
+}
+
+.ProfileCard-module__gzqv4G__dark .ProfileCard-module__gzqv4G__card {
+  background-color: #2d3748;
+}
+
+.ProfileCard-module__gzqv4G__card:hover {
+  box-shadow: 0 20px 40px rgba(2, 6, 23, .18);
+}
+
+.ProfileCard-module__gzqv4G__cardImage {
+  width: 100%;
+  height: var(--card-img-height);
+  object-fit: cover;
+}
+
+.ProfileCard-module__gzqv4G__cardBody {
+  text-align: center;
+  padding: 1rem;
+}
+
+.ProfileCard-module__gzqv4G__cardTitle {
+  color: #fc7000;
+  margin-bottom: 1rem;
+  font-family: Julius Sans One, sans-serif;
+  font-size: max(15px, min(3vw, 25px));
+  font-weight: 800;
+}
+
+.ProfileCard-module__gzqv4G__dark .ProfileCard-module__gzqv4G__cardTitle {
+  color: #fc7000;
+}
+
+.ProfileCard-module__gzqv4G__cardLink {
+  color: inherit;
+  text-decoration: none;
+  transition: color .16s;
+}
+
+.ProfileCard-module__gzqv4G__cardLink:hover, .ProfileCard-module__gzqv4G__dark .ProfileCard-module__gzqv4G__cardLink:hover {
+  color: #fc7000;
+}
+
+.ProfileCard-module__gzqv4G__cardDesc {
+  color: #fff;
+  margin-bottom: 1.5rem;
+  font-family: Roboto, sans-serif;
+  font-size: max(13px, min(4vw, 17px));
+  line-height: 1.4;
+}
+
+.ProfileCard-module__gzqv4G__dark .ProfileCard-module__gzqv4G__cardDesc {
+  color: #d1d5db;
+}
+
+.ProfileCard-module__gzqv4G__cardButton {
+  color: #374151;
+  border: 1px solid #d1d5db;
+  border-radius: 9999px;
+  padding: .5rem 1.5rem;
+  text-decoration: none;
+  transition: background-color .16s, color .16s, border-color .16s;
+  display: inline-block;
+}
+
+.ProfileCard-module__gzqv4G__cardButton:hover {
+  color: #fff;
+  background-color: #2563eb;
+  border-color: #2563eb;
+}
+
+.ProfileCard-module__gzqv4G__dark .ProfileCard-module__gzqv4G__cardButton {
+  color: #d1d5db;
+  border-color: #4b5563;
+}
+
+.ProfileCard-module__gzqv4G__dark .ProfileCard-module__gzqv4G__cardButton:hover {
+  color: #fff;
+  background-color: #3b82f6;
+  border-color: #3b82f6;
+}
+
+/*# sourceMappingURL=components_Home_Seventh%20Section_ProfileCard_module_css_bad6b30c._.single.css.map*/

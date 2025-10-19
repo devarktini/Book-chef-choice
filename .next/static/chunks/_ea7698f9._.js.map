@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///D:/ARKTINI/BookMyChef-gt/book-my-chef-next/Components/Container.jsx"],"sourcesContent":["function Container({ children }) {\r\n  return (\r\n    <div className=\"mx-auto my-15 border border-white px-4 py-10 md:w-6/10 rounded-md shadow-lg shadow-gray-500/50 text-white\">\r\n      {children}\r\n    </div>\r\n  );\r\n}\r\n\r\nexport default Container;\r\n"],"names":[],"mappings":";;;;;;AAAA,SAAS,UAAU,KAAY;QAAZ,EAAE,QAAQ,EAAE,GAAZ;IACjB,qBACE,6LAAC;QAAI,WAAU;kBACZ;;;;;;AAGP;KANS;uCAQM","debugId":null}},
+    {"offset": {"line": 32, "column": 0}, "map": {"version":3,"sources":["file:///D:/ARKTINI/BookMyChef-gt/book-my-chef-next/app/thanks/page.jsx"],"sourcesContent":["\"use client\";\r\n\r\nimport Container from \"../../Components/Container\";\r\n\r\nfunction Thanks() {\r\n  return (\r\n    <Container>\r\n      <div className=\"text-center\">\r\n        <h1 className=\"text-3xl font-bold text-white mb-4\">Thank You!</h1>\r\n        <p className=\"text-white\">\r\n          Your booking has been submitted successfully. We will get back to you\r\n          soon.\r\n        </p>\r\n      </div>\r\n    </Container>\r\n  );\r\n}\r\n\r\nexport default Thanks;\r\n"],"names":[],"mappings":";;;;;AAEA;AAFA;;;AAIA,SAAS;IACP,qBACE,6LAAC,sIAAS;kBACR,cAAA,6LAAC;YAAI,WAAU;;8BACb,6LAAC;oBAAG,WAAU;8BAAqC;;;;;;8BACnD,6LAAC;oBAAE,WAAU;8BAAa;;;;;;;;;;;;;;;;;AAOlC;KAZS;uCAcM","debugId":null}}]
+}
