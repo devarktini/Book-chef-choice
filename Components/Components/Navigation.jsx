@@ -1,8 +1,9 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useState } from "react";
 import Link from "next/link";
 import styles from "./Navigation.module.css";
+import ThemeSwitcher from "./ThemeSwitcher";
 
 const routes = [
   { name: "Home", href: "/" },
@@ -13,24 +14,11 @@ const routes = [
 ];
 
 const Navigation = () => {
-  const [showHeader, setShowHeader] = useState(true);
   const [menuOpen, setMenuOpen] = useState(false);
-  const lastScrollY = useRef(0);
-
-  useEffect(() => {
-    const onScroll = () => {
-      const curr = window.scrollY;
-      if (curr > lastScrollY.current && curr > 80) setShowHeader(false);
-      else setShowHeader(true);
-      lastScrollY.current = curr;
-    };
-    window.addEventListener("scroll", onScroll);
-    return () => window.removeEventListener("scroll", onScroll);
-  }, []);
 
   return (
     <>
-      <header className={`${styles.header} ${!showHeader ? styles.hide : ""}`}>
+      <header className={styles.header}>
         <div className={styles.container}>
           {/* Logo (left) */}
           <Link href="/" className={styles.logo}>
@@ -56,6 +44,7 @@ const Navigation = () => {
 
           {/* Desktop "Book Chef" button */}
           <div className={styles.right}>
+            <ThemeSwitcher />
             <Link href="/book-chef" className={styles.button}>
               Book Chef
             </Link>
