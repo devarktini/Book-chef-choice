@@ -3,8 +3,7 @@
 .main{
   width: 100%;
   height: auto;
-  
-  background-color: #f1c370;
+background: linear-gradient(90deg, #f1c370 0%, #e8b04d 25%, #d49a3a 50%, #bf8530 75%, #ffa166 100%);
   display: flex;
   flex-direction: column;
   justify-content: center;

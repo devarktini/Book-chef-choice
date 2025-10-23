@@ -2,7 +2,7 @@
   position: relative;
   padding: 40px 20px;
   text-align: center;
-  background-color:#f1c370;
+   background: linear-gradient(12deg, #f1c370 0%, #e8b04d 25%, #d49a3a 50%, #bf8530 75%, #ffa166 100%);
 }
 
 .topRight {
@@ -45,7 +45,8 @@
 .content h2 {
   font-size: 38px;
   margin-bottom: 10px;
-  color: #FC7000;
+  font-weight: 600;
+  color: #ffffff;
 }
 
 .content p {
@@ -106,7 +107,8 @@
   margin-top: 50px;
   padding: 12px 22px;
   background-color: transparent;
-  color: #FC7000;
+  font-weight: 600;
+  color: #ffffff;
   font-family: 'Julius Sans One', sans-serif;
   font-size: 18px;
   border: 2px solid #FC7000;
