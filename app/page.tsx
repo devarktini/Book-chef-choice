@@ -4,13 +4,13 @@ import HeroSection from "../components/Home/Hero/HeroSection"; // keep Hero dire
 // import SeventhSection from "../components/Home/Seventh Section/SeventhSection";
 
 // Lazy-loaded sections
-const FirstSection = lazy(() => import("../components/Home/First Section/FirstSection"));
+const FirstSection = lazy(() => import("../Components/Home/FirstSection/FirstSection"));
 const SecondSection = lazy(() => import("../components/Home/SecondSection/SecondSection"));
-const ThirdSection = lazy(() => import("../components/Home/Third Section/ThirdSection"));
-const Fourth = lazy(() => import("../components/Home/Fourth Section/Fourth"));
-const Fifth = lazy(() => import("../components/Home/Fifth Section/Fifth"));
-const FaqSection = lazy(() => import("../components/Home/Sixth Section/FaqSection"));
-const SeventhSection = lazy(() => import("../components/Home/Seventh Section/SeventhSection"));
+const ThirdSection = lazy(() => import("../Components/Home/ThirdSection/ThirdSection"));
+const Fourth = lazy(() => import("../Components/Home/FourthSection/Fourth"));
+const Fifth = lazy(() => import("../Components/Home/FifthSection/Fifth"));
+const FaqSection = lazy(() => import("../Components/Home/SixthSection/FaqSection"));
+const SeventhSection = lazy(() => import("../Components/Home/SeventhSection/SeventhSection"));
 // const SpecialOffer = lazy(() => import("../components/Home/SpecialModule/SpecialOffer"));
 
 const Home = () => {
