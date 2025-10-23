@@ -360,8 +360,8 @@ font-size: clamp(18px,5vw,35px);
   flex-direction: row;
   justify-content: center;
   gap: 0px;
-  background-color: #232B2B;
-  border-top-left-radius: 150px;
+  background-color: #f1c370;
+  border-top-left-radius: 0px;
   border-top-right-radius: 150px;
 
 }
@@ -370,7 +370,7 @@ font-size: clamp(18px,5vw,35px);
   width: 40%;
   height: auto;
   z-index: -1;
-  background-color: #151A20;
+  background-color: #f1c370;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -444,6 +444,7 @@ font-size: clamp(18px,5vw,35px);
   justify-content: start;
   align-items: center;
   gap: 20px;
+  
 }
 .secondRight h2{
   color: azure;
@@ -493,7 +494,7 @@ font-size: clamp(18px,5vw,35px);
 
   }
   .secondRight{
-    
+    background-color: #c2cfcf4f;
     justify-content: start;
     align-items: start;
 

@@ -1,0 +1,188 @@
+.specialOffer {
+  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+  padding: 60px 20px;
+  position: relative;
+  overflow: hidden;
+  font-family: 'Arial', sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  position: relative;
+  z-index: 2;
+}
+
+/* Left Content */
+.contentLeft {
+  flex: 1;
+  color: white;
+}
+
+.saveBadge {
+  background: linear-gradient(45deg, #ff6b35, #ff8e35);
+  color: white;
+  padding: 8px 20px;
+  border-radius: 25px;
+  font-size: 18px;
+  font-weight: bold;
+  display: inline-block;
+  margin-bottom: 15px;
+  box-shadow: 0 4px 15px rgba(255, 107, 53, 0.3);
+}
+
+.specialTag {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.specialTag h2 {
+  font-size: 28px;
+  font-weight: 700;
+  color: white;
+  margin: 0;
+}
+
+.orangeSquare {
+  width: 20px;
+  height: 20px;
+  background: #ff6b35;
+  transform: rotate(45deg);
+}
+
+.heading {
+  font-size: 42px;
+  font-weight: 800;
+  line-height: 1.1;
+  margin-bottom: 20px;
+  background: linear-gradient(45deg, #fff, #ff8e35);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.description {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #cccccc;
+  margin-bottom: 30px;
+  max-width: 500px;
+}
+
+.ctaButton {
+  background: linear-gradient(45deg, #ff6b35, #ff8e35);
+  color: white;
+  border: none;
+  padding: 15px 40px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 20px rgba(255, 107, 53, 0.4);
+}
+
+.ctaButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 25px rgba(255, 107, 53, 0.6);
+}
+
+/* Right Content - Image */
+.contentRight {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.foodImage {
+  width: 100%;
+  max-width: 500px;
+  height: 400px;
+  border-radius: 20px;
+  object-fit: cover;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+/* Background Decorations */
+.backgroundElements {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.bgCircle {
+  position: absolute;
+  border-radius: 50%;
+  background: linear-gradient(45deg, #ff6b35, transparent);
+  opacity: 0.1;
+}
+
+.circle1 {
+  width: 300px;
+  height: 300px;
+  top: -150px;
+  right: -100px;
+}
+
+.circle2 {
+  width: 200px;
+  height: 200px;
+  bottom: -100px;
+  left: -50px;
+  background: linear-gradient(45deg, transparent, #ff8e35);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+  }
+  
+  .specialTag {
+    justify-content: center;
+  }
+  
+  .heading {
+    font-size: 32px;
+  }
+  
+  .description {
+    margin: 0 auto 30px;
+  }
+  
+  .foodImage {
+    height: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .specialOffer {
+    padding: 40px 15px;
+  }
+  
+  .heading {
+    font-size: 28px;
+  }
+  
+  .saveBadge {
+    font-size: 16px;
+    padding: 6px 15px;
+  }
+  
+  .specialTag h2 {
+    font-size: 24px;
+  }
+}

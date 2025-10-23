@@ -16,7 +16,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <ThemeProvider>
           <Navigation />
           <PathLogger />
-          <main style={{ paddingTop: '100px' }}>
+          <main style={{ paddingTop: '81px' }}>
             {children}
           </main>
           <Footer />

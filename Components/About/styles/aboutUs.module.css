@@ -42,7 +42,7 @@
 .blackScreenForOpacity {
   width: 100vw;
   height: inherit;
-  background-color: black;
+  background-color: var(--hero-overlay);
   opacity: 0.6;
   position: absolute;
 }
@@ -87,7 +87,7 @@
 }
 
 .secondSectionContainer {
-  background-color: #151920;
+  background-color: #f1c370;
 }
 
 .containerDecor {
@@ -111,7 +111,7 @@
 
 /* Headings (A Team of Award-Winning Chefs, Dinner, Wedding...) */
 .thirdSectionHeading {
-  color: #ffffff;
+  color: #000000;
   font-family: 'Julius Sans One', sans-serif;
   font-weight: 600;
   font-size: 1.75rem;
@@ -121,7 +121,7 @@
 
 /* Paragraph text */
 .thirdSectionText {
-  color: #ffffff;
+  color: #000000;
   font-family: 'Roboto', sans-serif;
   font-size: 1rem;
   width: 80%;
@@ -140,7 +140,7 @@
 
 /* Section heading "Redefining Dining Experiences in India" */
 .fourthSectionHeading {
-  color: #ffffff;
+  color: #000000;
   font-family: 'Julius Sans One', sans-serif;
   font-weight: 600;
   font-size: 1.75rem;
@@ -159,7 +159,7 @@
 
 /* Service description text */
 .fourthSectionServiceText {
-  color: #ffffff;
+  color: #000000;
   font-family: 'Roboto', sans-serif;
   font-size: 1rem;
   line-height: 1.6;
@@ -169,7 +169,7 @@
 
 /* Review Card styles */
 .reviewCardContainer {
-  background-color: #000;
+  background-color: #FFFFFF;
   border-radius: 12px;
   padding: 20px;
   width: 280px;
@@ -181,7 +181,7 @@
 }
 
 .reviewCardText {
-  color: #fff;
+  color: #000000;
   font-family: 'Roboto', sans-serif;
   font-size: 0.95rem;
   line-height: 1.6;
@@ -196,7 +196,7 @@
 }
 
 .reviewCardCity {
-  color: #fff;
+  color: #000000;
   font-family: 'Julius Sans One', sans-serif;
   font-size: 0.85rem;
 }

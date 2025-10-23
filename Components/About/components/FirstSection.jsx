@@ -4,7 +4,7 @@ function FirstSection({ className }) {
   const heading = <p className={styles.cardHeading}>WHO WE ARE</p>;
 
   const titleParagraph = (
-    <p className="text-base md:text-lg para text-white">
+    <p className="text-base md:text-lg para text-gray-800">
       We are a collective of culinary experts, food enthusiasts, and
       professional chefs with one vision — to bring authentic, homely, and
       unforgettable dining experiences right to your doorstep. Our journey began
@@ -74,7 +74,7 @@ function FirstSection({ className }) {
         {/* Left text + image */}
         <div className="item1 flex flex-col items-center space-y-4 md:block">
           <div>
-            <p className="text-sm md:text-base para text-white">
+            <p className="text-sm md:text-base para text-gray-800">
               What sets us apart is our attention to detail — not just in
               cooking but in the entire dining experience. Each chef we onboard
               undergoes rigorous training, background verification, and skill

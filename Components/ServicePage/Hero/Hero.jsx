@@ -6,7 +6,7 @@ const Hero = ({ Heading, AboveHead, imageUrl }) => {
       <div
         className={style.main}
         style={{
-          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(${imageUrl})`,
+          backgroundImage: `linear-gradient(var(--hero-overlay), rgba(0, 0, 0, 0.1)), url(${imageUrl})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",

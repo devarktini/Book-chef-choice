@@ -21,7 +21,7 @@ const Fourth = () => {
         <div className={style.second}>
           <div
             className={style.secondOne}
-            style={{ backgroundColor: "#0F0F0F" }}
+            style={{ backgroundColor: "#FFFFFF" }}
           >
             <img
               src="https://res.cloudinary.com/dzvvb0z0h/image/upload/f_auto,q_auto/v1757953144/Bartenders_hgseq1.png"
@@ -35,7 +35,7 @@ const Fourth = () => {
           </div>
           <div
             className={style.secondOne}
-            style={{ backgroundColor: "#151920" }}
+            style={{ backgroundColor: "#FFFFFF" }}
           >
             <img
               src="https://res.cloudinary.com/dzvvb0z0h/image/upload/f_auto,q_auto/v1757953178/Waiters_f59olq.png"
@@ -49,7 +49,7 @@ const Fourth = () => {
           </div>
           <div
             className={style.secondOne}
-            style={{ backgroundColor: "#0F0F0F" }}
+            style={{ backgroundColor: "#FFFFFF" }}
           >
             <img
               src="https://res.cloudinary.com/dzvvb0z0h/image/upload/f_auto,q_auto/v1757953148/clean_cgej1f.png"

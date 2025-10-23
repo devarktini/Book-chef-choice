@@ -76,18 +76,20 @@ const ThirdSection = () => {
           <div className={style.secRigh}>
             <div className={style.secRighInn}>
               <a
-                href="https://example.com"
+                href="https://play.google.com/store"
                 target="_blank"
                 rel="noopener noreferrer"
+                className={style.appButton}
               >
-                {/* <img src={playStore} className={style.arrImg} alt="Go to Example" /> */}
+                Google Play
               </a>
               <a
-                href="https://example.com"
+                href="https://apple.com/app-store"
                 target="_blank"
                 rel="noopener noreferrer"
+                className={style.appButton}
               >
-                {/* <img src={appStore} className={style.arrImg} alt="Go to Example" /> */}
+                App Store
               </a>
             </div>
           </div>

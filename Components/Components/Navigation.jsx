@@ -18,7 +18,7 @@ const Navigation = () => {
 
   return (
     <>
-      <header className={styles.header}>
+      <div className={styles.header}>
         <div className={styles.container}>
           {/* Logo (left) */}
           <Link href="/" className={styles.logo}>
@@ -63,7 +63,7 @@ const Navigation = () => {
             />
           </button>
         </div>
-      </header>
+      </div>
 
       {/* Click-outside backdrop */}
       <div

@@ -4,8 +4,10 @@
   height: auto;
   padding: 15px;
   box-sizing: border-box;
-  background-color: #151920;
+  background-color: white;
   border-radius: 25px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  border: #FC7000 0.5px solid;
 
 }
 .card{
@@ -62,7 +64,7 @@ box-sizing: border-box;
   font-family: 'Roboto',sans-serif;
   font-weight: 300;
   line-height: 1.5rem;
-  color: #fff;
+  color: #333333;
 }
 
 .fourImg{

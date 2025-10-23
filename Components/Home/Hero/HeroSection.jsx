@@ -106,9 +106,11 @@ function HeroSection() {
           loading="lazy"
           decoding="async"
         />
-        <Link href="/occasion">
-          <button className={styles.button}>Book Your Chef</button>
-        </Link>
+      <Link href="/occasion">
+  <button className={styles.button}>
+    <span>Book Your Chef</span>
+  </button>
+</Link>
       </div>
     </div>
   );

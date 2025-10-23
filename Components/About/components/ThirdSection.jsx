@@ -59,7 +59,7 @@ function ThirdSection() {
   );
 
   return (
-    <div className={`${styles.containerDecor} bg-black`}>
+    <div className={`${styles.containerDecor} bg-gray-50 relative py-10 px-4 md:px-20 `}>
       {dataArr.map((item, index) => (
         <div
           key={index}

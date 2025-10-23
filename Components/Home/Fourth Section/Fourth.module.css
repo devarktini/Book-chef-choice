@@ -11,13 +11,13 @@
   justify-content: center;
   align-items: center;
   margin-top: 100px;
-  background-color: #191818;
+  background-color: #f1c370;
 }
 .headOne{
   color: #FC7000;
 }
 .col{
-  color: #ffffff;
+  color: #414A4C;
   
 }
 .first{
@@ -29,7 +29,7 @@
   font-family: 'Julius Sans One', 'Poppins', sans-serif;
   gap: 0px;
   position: relative;
-  background-image: url(https://res.cloudinary.com/dzvvb0z0h/image/upload/f_auto,q_auto/v1757953159/Group33_xfqtx4.png);
+  background-image: url("https://res.cloudinary.com/dzvvb0z0h/image/upload/f_auto,q_auto/v1757953159/Group33_xfqtx4.png");
   background-position: top right;
   background-repeat: no-repeat;
 

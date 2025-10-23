@@ -4,7 +4,7 @@
 .main{
   width: 100%;
   height: auto;
-  background-color: #232B2B;
+  background-color: #FFFFFF;
   gap: 100px;
   padding-top: 100px;
 }
@@ -30,5 +30,5 @@ text-align: center;
   text-align: center;
   font-size: clamp(14px, 3vw, 18px);
   font-family: 'Roboto', sans-serif;
-  color: white;
+  color: #414A4C;
 }

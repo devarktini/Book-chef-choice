@@ -1,7 +1,7 @@
 import React, { Suspense, lazy } from "react";
 import HeroSection from "../components/Home/Hero/HeroSection"; // keep Hero direct since it’s first paint
 
-import SeventhSection from "../components/Home/Seventh Section/SeventhSection";
+// import SeventhSection from "../components/Home/Seventh Section/SeventhSection";
 
 // Lazy-loaded sections
 const FirstSection = lazy(() => import("../components/Home/First Section/FirstSection"));
@@ -10,6 +10,8 @@ const ThirdSection = lazy(() => import("../components/Home/Third Section/ThirdSe
 const Fourth = lazy(() => import("../components/Home/Fourth Section/Fourth"));
 const Fifth = lazy(() => import("../components/Home/Fifth Section/Fifth"));
 const FaqSection = lazy(() => import("../components/Home/Sixth Section/FaqSection"));
+const SeventhSection = lazy(() => import("../components/Home/Seventh Section/SeventhSection"));
+// const SpecialOffer = lazy(() => import("../components/Home/SpecialModule/SpecialOffer"));
 
 const Home = () => {
   return (
@@ -20,6 +22,7 @@ const Home = () => {
         <SecondSection />
         <ThirdSection />
         <Fourth />
+        {/* <SpecialOffer /> */}
         <SeventhSection />
         <Fifth />
         <FaqSection />

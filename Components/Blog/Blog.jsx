@@ -54,7 +54,7 @@ export default function Blog() {
         imageUrl="https://res.cloudinary.com/dzvvb0z0h/image/upload/f_auto,q_auto/v1757953149/dinner_cnpqze.jpg"
         AboveHead="Our Blogs"
       />
-      <section className={styles.blogSection}>
+      <div className={styles.blogSection}>
         <div className={styles.container}>
           <h2 className={styles.heading}>
             Nice Workplace For Brainstorming Meetings
@@ -94,7 +94,7 @@ export default function Blog() {
 
           <button className={styles.loadBtn}>Load All Posts</button>
         </div>
-      </section>
+      </div>
     </>
   );
 }

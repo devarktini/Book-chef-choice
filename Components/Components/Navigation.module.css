@@ -4,50 +4,83 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 100px;            /* <= 80px as requested */
+  height: 80px; /* Reduced from 100px as requested */
   background: var(--nav-bg);
-  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  box-shadow: 0 2px 12px rgba(0,0,0,0.1);
   z-index: 1000;
   transition: transform 0.4s ease-in-out, background-color 0.3s ease;
+  backdrop-filter: blur(10px); /* Adds modern glass effect */
 }
+
 .hide { transform: translateY(-100%); }
 
 .container {
   max-width: 1200px;
-  margin: auto;
+  margin: 0 auto;
   height: 100%;
   padding: 0 24px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 40px;
 }
 
-/* Logo responsive by % on big screens */
+/* Logo - better sizing */
+.logo {
+  flex-shrink: 0;
+}
+
 .logo img {
-  width: 20%;
-  min-width: 150px;
-  max-width: 160px;
+  width: 140px;
   height: auto;
+  transition: transform 0.3s ease;
 }
 
-.button {
-  background-color: transparent;
-  border: 1px solid #FC7000;
-  padding: 10px 20px;
-  color: #FC7000;
-  font-size: 1.5rem;
-  cursor: pointer;
-  border-radius: 4px;
-  transition: background-color 0.3s ease, color 0.3s ease;
-  margin-top: 25px;
+.logo:hover img {
+  transform: scale(1.05);
 }
 
-.button:hover {
-  background-color: #FC7000;
-  color: white;
+/* Desktop nav - improved spacing and alignment */
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  flex: 1;
+  justify-content: center;
+  margin-left: 40px;
 }
 
-/* Desktop nav */
+.navLink {
+  text-decoration: none;
+  font-weight: 600;
+  color: var(--nav-text);
+  transition: all 0.3s ease;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  padding: 8px 0;
+  position: relative;
+  white-space: nowrap;
+}
+
+.navLink:hover { 
+  color: #FC7000; 
+}
+
+.navLink::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #FC7000;
+  transition: width 0.3s ease;
+}
+
+.navLink:hover::after {
+  width: 100%;
+}
+
 .nav {
   display: flex;
   gap: 40px;
@@ -83,6 +116,38 @@
 }
 .button:hover { background: #FC7000; color: #fff; }
 
+/* Desktop CTA section - better alignment */
+.right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-shrink: 0;
+}
+
+/* Button styles - consolidated and improved */
+.button {
+  background-color: transparent;
+  border: 2px solid #FC7000;
+  padding: 10px 24px;
+  color: #FC7000;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+  white-space: nowrap;
+  font-family: 'Roboto', sans-serif;
+}
+
+.button:hover {
+  background-color: #FC7000;
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(252, 112, 0, 0.3);
+}
+
 /* Mobile menu icon: hidden on large screens */
 .menuIcon { 
   display: none; 
@@ -90,17 +155,44 @@
   border: 0;
   padding: 0;
   cursor: pointer;
+  transition: transform 0.3s ease;
 }
-.menuIcon img { width: 40px; height: 40px; }
+
+.menuIcon:hover {
+  transform: scale(1.1);
+}
+
+.menuIcon img { 
+  width: 32px; 
+  height: 32px; 
+}
 
 /* ================= Mobile / Tablet ================= */
 @media (max-width: 1024px) {
-  .nav, .right { display: none; }   /* hide desktop links & CTA */
-  .menuIcon { display: block; }     /* show GIF icon */
-  .logo img { width: 36%; }         /* control by % on smaller screens */
+  .header {
+    height: 70px;
+  }
+  
+  .nav, .right { 
+    display: none; 
+  }
+  
+  .menuIcon { 
+    display: block; 
+  }
+  
+  .logo img { 
+    width: 120px; 
+  }
+  
+  .container {
+    padding: 0 16px;
+  }
 }
 
 /* ================= Off-Canvas Sidebar ================= */
+/* ... keep your existing sidebar styles ... */
+
 .backdrop {
   position: fixed;
   inset: 0;
@@ -112,17 +204,17 @@
 }
 .backdrop.show {
   opacity: 1;
-  pointer-events: auto;   /* click outside to close */
+  pointer-events: auto;
 }
 
 .sidebar {
   position: fixed;
   top: 0;
   left: -100%;
-  width: 70%;            /* 50% width */
+  width: 70%;
   max-width: 520px;
   height: 100%;
-  background: #232B2B;      /* black bg */
+  background: #232B2B;
   color: #FC7000;
   transition: left .3s ease-in-out;
   z-index: 1200;
@@ -131,14 +223,12 @@
 }
 .sidebar.open { left: 0; }
 
-/* Foreground content above bg images */
 .sidebarInner {
   position: relative;
   z-index: 1;
   padding: 24px;
 }
 
-/* Close button */
 .closeBtn {
   position: absolute;
   top: 12px;
@@ -150,7 +240,6 @@
   cursor: pointer;
 }
 
-/* Heading + small decorative images */
 .menuHeading {
   font-size: 50px;
   text-align: center;
@@ -166,7 +255,6 @@
   pointer-events: none;
 }
 
-/* Links list */
 .sidebarNav {
   display: flex;
   flex-direction: column;
@@ -176,7 +264,7 @@
 
 .sidebarItem {
   display: flex;
-  flex-direction: column;  /* image below each link */
+  flex-direction: column;
   align-items: center;
 }
 
@@ -189,7 +277,6 @@
 }
 .sidebarLink:hover { color: #fff; }
 
-/* the small image BELOW each link */
 .linkDivider {
   width: 40%;
   height: 18px;
@@ -197,13 +284,12 @@
   pointer-events: none;
 }
 
-/* Background decoration images inside sidebar (smaller + behind) */
 .bg {
   position: absolute;
   opacity: .12;
-  width: 100px;     /* keep small */
+  width: 100px;
   height: auto;
-  z-index: 0;      /* behind .sidebarInner */
+  z-index: 0;
   pointer-events: none;
 }
 .bg1 { top: 0; left: -10; transform: rotate(80deg); }
@@ -214,4 +300,3 @@
 .bg6 { top: 40%; left: 0px; transform: rotate(100deg); }
 .bg7 { top: 70%; left: -10px; transform: rotate(10deg); }
 .bg8 { top: 100%; left: -10px; transform: rotate(10deg); }
-

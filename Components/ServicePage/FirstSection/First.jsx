@@ -15,17 +15,17 @@ const First = () => {
               </h2>
             </div>
           </div>
-          <div className={style.firstRight}>
+          <div className={`  flex flex-col xl:flex-row lg:flex-row items-center justify-center`}>
             <img
               className="responsive-img"
               src="https://res.cloudinary.com/dzvvb0z0h/image/upload/f_auto,q_auto/v1757953148/chef_d1mmdd.png"
               alt="Chef-Image 1"
             />
-            <img
+            {/* <img
               className="responsive-img"
               src="https://res.cloudinary.com/dzvvb0z0h/image/upload/f_auto,q_auto/v1757953148/chef2_yiqn6d.png"
               alt="Chef-Image 2"
-            />
+            /> */}
           </div>
         </div>
         <div className={style.second}>

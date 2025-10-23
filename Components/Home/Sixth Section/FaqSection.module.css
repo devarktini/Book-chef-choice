@@ -1,9 +1,9 @@
 .wrapper {
-  background-color: #111;
+  background-color: #ffffff;
   padding: 3rem 1rem;
   text-align: center;
   padding: 50px;
-  margin-top: 50px;
+  margin-top: 0px;
 }
 
 .title {
@@ -47,7 +47,7 @@
 }
 
 .qText {
-  color: #fff;
+  color: #000000;
   font-size: 1.1rem;
   flex: 1;
   font-family: 'Julius Sans One',sans-serif;
@@ -64,7 +64,7 @@
 }
 
 .answer {
-  color: #ccc;
+  color: #000000;
   padding: 0.5rem 0 0 0;
   text-align: left;
   font-size: 1rem;

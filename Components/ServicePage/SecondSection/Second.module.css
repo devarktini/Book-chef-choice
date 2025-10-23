@@ -1,5 +1,5 @@
 .main{
-  width: 100%;
+  /* width: 100%; */
   height: auto;
   display: flex;
   flex-direction: column;
@@ -7,8 +7,8 @@
   justify-content: center;
   box-sizing: border-box;
   padding: 50px;
-  background-color: #414A4C;
-  background-image: url("https://res.cloudinary.com/dzvvb0z0h/image/upload/f_auto,q_auto/v1757953145/bg4_gvm4do.png");
+  background-color: #ffffff;
+  /* background-image: url("https://res.cloudinary.com/dzvvb0z0h/image/upload/f_auto,q_auto/v1757953145/bg4_gvm4do.png"); */
 }
 .first{
   display: flex;
@@ -20,7 +20,7 @@
 .first h2{
   font-size: clamp(20px,5vw, 45px);
   font-family: 'Julius Sans One','Roboto',sans-serif;
-  color: azure;
+  color: #ffa166;
 }
 
 .second{
@@ -40,7 +40,7 @@
 
 @media (max-width: 768px) {
   .second{
-    width: 550px;
+    width: 400px;
     flex-direction: column;
     gap: 50px;
     margin-top: 30px;

@@ -23,7 +23,7 @@ export default function ActionAreaCard({
     : image;
 
   return (
-    <Card className={styles.card} style={{ backgroundColor: bgColor }}>
+    <Card className={styles.card} style={{ backgroundColor: bgColor, border: colors === "#151920" ? "0px solid #151920" : "none" }}>
       <CardActionArea>
         <CardMedia
           component="img"
