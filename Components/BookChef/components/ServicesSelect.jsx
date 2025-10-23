@@ -82,7 +82,7 @@ function ServicesSelect() {
 
   return (
     <Container>
-      <div className="text-center my-5 text-white">
+      <div className="text-center my-5 text-black">
         <p className="text-2xl font-semibold">{serviceSelectData.title}</p>
         <p className="my-2">{serviceSelectData.text}</p>
       </div>
@@ -94,8 +94,8 @@ function ServicesSelect() {
             onClick={() => handleOptionClicked(item.id)}
             className={`w-9/10 md:w-6/10 cursor-pointer p-4 rounded-md border transition-colors duration-200 ${
               isActive(item.id)
-                ? "bg-orange-500 text-white"
-                : "border-white text-white"
+                ? "bg-orange-500 text-black border-black"
+                : "border-white text-black "
             }`}
           >
             <div className="flex justify-between">
